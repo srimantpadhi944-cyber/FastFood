@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Menu - FastBite</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container navbar-content">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                🍔 FastBite
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="menu.html" class="active">
+                    Menu
+                </a>
+
+                <a href="#">
+                    Offers
+                </a>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    class="cart-btn"
+                    onclick="goToCart()"
+                >
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MENU HERO -->
+
+    <section class="menu-header">
+
+        <div class="container">
+
+            <span class="hero-badge">
+                🍴 OUR MENU
+            </span>
+
+            <h1>
+                Delicious Food,
+                <span>Made For You.</span>
+            </h1>
+
+            <p>
+                Explore our delicious selection of
+                burgers, pizzas, fries, wraps and drinks.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <section class="menu-section">
+
+        <div class="container">
+
+            <!-- SEARCH -->
+
+            <div class="menu-controls">
+
+                <div class="search-box">
+
+                    <span>🔍</span>
+
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search your favourite food..."
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORIES -->
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="burgers"
+                >
+                    🍔 Burgers
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="pizza"
+                >
+                    🍕 Pizza
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="fries"
+                >
+                    🍟 Fries
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="wraps"
+                >
+                    🌯 Wraps
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="chicken"
+                >
+                    🍗 Chicken
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-category="drinks"
+                >
+                    🥤 Drinks
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCT COUNT -->
+
+            <div class="menu-top">
+
+                <h2>
+                    Our Food
+                </h2>
+
+                <span id="product-count">
+                    12 items
+                </span>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div
+                class="product-grid"
+                id="product-grid"
+            >
+
+            </div>
+
+
+            <!-- EMPTY RESULT -->
+
+            <div
+                id="no-products"
+                class="no-products"
+                style="display: none;"
+            >
+
+                <div>😔</div>
+
+                <h3>
+                    No food found
+                </h3>
+
+                <p>
+                    Try another search or category.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+</html>

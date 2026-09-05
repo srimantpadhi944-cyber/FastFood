@@ -314,3 +314,297 @@ nav a:hover {
         font-size: 21px;
     }
 }
+/* ===============================
+   MENU PAGE
+================================ */
+
+.menu-header {
+    padding: 70px 0;
+    background: linear-gradient(
+        135deg,
+        #fff8f2,
+        #ffe8dc
+    );
+}
+
+.menu-header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.menu-header h1 span {
+    color: #ff4d1c;
+}
+
+.menu-header p {
+    color: #666;
+    font-size: 17px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+
+/* ===============================
+   MENU CONTROLS
+================================ */
+
+.menu-section {
+    padding: 60px 0;
+}
+
+.menu-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    width: 600px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    padding: 14px 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+/* ===============================
+   FILTER BUTTONS
+================================ */
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    border: 1px solid #eee;
+    background: white;
+    padding: 11px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #ff4d1c;
+    color: white;
+    border-color: #ff4d1c;
+}
+
+
+/* ===============================
+   MENU TOP
+================================ */
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.menu-top h2 {
+    font-size: 28px;
+}
+
+.menu-top span {
+    color: #888;
+}
+
+
+/* ===============================
+   PRODUCT GRID
+================================ */
+
+.product-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* ===============================
+   PRODUCT CARD
+================================ */
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.1);
+}
+
+
+/* ===============================
+   PRODUCT IMAGE
+================================ */
+
+.product-image {
+    height: 210px;
+    background: #fff0e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.food-emoji {
+    font-size: 100px;
+}
+
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #ff4d1c;
+    color: white;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ===============================
+   PRODUCT INFO
+================================ */
+
+.product-info {
+    padding: 20px;
+}
+
+.product-rating {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.product-info h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 63px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.product-bottom strong {
+    font-size: 21px;
+    color: #222;
+}
+
+.add-btn {
+    border: none;
+    background: #ff4d1c;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/* ===============================
+   NO PRODUCTS
+================================ */
+
+.no-products {
+    text-align: center;
+    padding: 60px;
+}
+
+.no-products div {
+    font-size: 60px;
+}
+
+.no-products h3 {
+    margin: 15px 0 8px;
+}
+
+.no-products p {
+    color: #777;
+}
+
+
+/* ===============================
+   MENU RESPONSIVE
+================================ */
+
+@media (max-width: 1100px) {
+
+    .product-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .product-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .menu-header h1 {
+        font-size: 38px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-buttons {
+        justify-content: flex-start;
+    }
+
+    .menu-top h2 {
+        font-size: 23px;
+    }
+
+}

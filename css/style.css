@@ -967,3 +967,528 @@ nav a:hover {
     }
 
 }
+/* =====================================
+   CHECKOUT PAGE
+===================================== */
+
+.checkout-header {
+    padding: 60px 0;
+    background: linear-gradient(
+        135deg,
+        #fff8f2,
+        #ffe8dc
+    );
+}
+
+.checkout-header h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.checkout-header h1 span {
+    color: #ff4d1c;
+}
+
+.checkout-header p {
+    color: #666;
+    font-size: 17px;
+}
+
+
+/* =====================================
+   CHECKOUT LAYOUT
+===================================== */
+
+.checkout-section {
+    padding: 60px 0 90px;
+}
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* =====================================
+   CHECKOUT FORM
+===================================== */
+
+.checkout-form {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.06);
+}
+
+.checkout-form h2 {
+    font-size: 27px;
+}
+
+.form-subtitle {
+    color: #888;
+    margin: 8px 0 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff4d1c;
+    box-shadow:
+        0 0 0 3px rgba(255,77,28,0.08);
+}
+
+
+/* =====================================
+   DELIVERY / PAYMENT OPTIONS
+===================================== */
+
+.delivery-options,
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.delivery-option,
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px;
+
+    border: 1px solid #eee;
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delivery-option:hover,
+.payment-option:hover {
+    border-color: #ff4d1c;
+    background: #fff8f5;
+}
+
+.delivery-option input,
+.payment-option input {
+    accent-color: #ff4d1c;
+}
+
+
+/* =====================================
+   TERMS
+===================================== */
+
+.terms {
+    background: #fff8f5;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.terms label {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+    cursor: pointer;
+}
+
+.terms input {
+    accent-color: #ff4d1c;
+}
+
+
+/* =====================================
+   PLACE ORDER
+===================================== */
+
+.place-order-btn {
+    width: 100%;
+    border: none;
+
+    background: #ff4d1c;
+    color: white;
+
+    padding: 16px;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 10px 25px rgba(255,77,28,0.25);
+}
+
+.place-order-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+/* =====================================
+   CHECKOUT SUMMARY
+===================================== */
+
+.checkout-summary {
+    background: white;
+    padding: 28px;
+    border-radius: 22px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.06);
+
+    position: sticky;
+    top: 100px;
+}
+
+.checkout-summary h2 {
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   CHECKOUT ITEMS
+===================================== */
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 0;
+}
+
+.checkout-item-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.checkout-emoji {
+    width: 48px;
+    height: 48px;
+
+    background: #fff0e8;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.checkout-item h4 {
+    margin-bottom: 4px;
+}
+
+.checkout-item p {
+    color: #888;
+    font-size: 13px;
+}
+
+
+/* =====================================
+   BACK TO CART
+===================================== */
+
+.back-cart {
+    display: block;
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #ff4d1c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* =====================================
+   EMPTY CHECKOUT
+===================================== */
+
+.checkout-empty {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.checkout-empty div {
+    font-size: 50px;
+}
+
+.checkout-empty h3 {
+    margin: 10px 0;
+}
+
+.checkout-empty a {
+    color: #ff4d1c;
+}
+
+
+/* =====================================
+   ORDER SUCCESS
+===================================== */
+
+.success-page {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff8f2,
+        #ffe8dc
+    );
+}
+
+.success-card {
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+
+    text-align: center;
+
+    padding: 50px 40px;
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.08);
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+
+    background: #ff4d1c;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 20px;
+
+    font-size: 45px;
+}
+
+.success-badge {
+    color: #ff4d1c;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.success-card h1 {
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+.success-card > p {
+    color: #777;
+}
+
+
+/* =====================================
+   ORDER ID
+===================================== */
+
+.order-id-box {
+    background: #fff7f3;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    margin: 25px 0;
+}
+
+.order-id-box span {
+    display: block;
+    color: #888;
+    font-size: 13px;
+}
+
+.order-id-box strong {
+    display: block;
+    margin-top: 5px;
+    color: #ff4d1c;
+    font-size: 22px;
+}
+
+
+/* =====================================
+   SUCCESS DETAILS
+===================================== */
+
+.success-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    text-align: left;
+
+    margin-bottom: 25px;
+}
+
+.success-details > div {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.success-details span {
+    display: block;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.pending-status {
+    color: #e67e22;
+}
+
+
+/* =====================================
+   DELIVERY MESSAGE
+===================================== */
+
+.delivery-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    background: #fff7f3;
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    margin-bottom: 25px;
+}
+
+.delivery-message:first-letter {
+    font-size: 25px;
+}
+
+.delivery-message div {
+    text-align: left;
+}
+
+.delivery-message p {
+    color: #777;
+    margin-top: 4px;
+}
+
+
+/* =====================================
+   SUCCESS BUTTONS
+===================================== */
+
+.success-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.success-buttons .btn {
+    padding: 13px 20px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-summary {
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .checkout-header h1 {
+        font-size: 38px;
+    }
+
+    .checkout-form {
+        padding: 25px 20px;
+    }
+
+    .success-card {
+        padding: 40px 20px;
+    }
+
+    .success-card h1 {
+        font-size: 32px;
+    }
+
+    .success-details {
+        grid-template-columns: 1fr;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+}

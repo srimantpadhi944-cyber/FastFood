@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Order Confirmed - FastBite</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="container navbar-content">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                🍔 FastBite
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="#">
+                    Offers
+                </a>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- SUCCESS -->
+
+    <main class="success-page">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <span class="success-badge">
+                ORDER CONFIRMED
+            </span>
+
+
+            <h1>
+                Thank You!
+            </h1>
+
+
+            <p>
+                Your delicious food is being
+                prepared with love.
+            </p>
+
+
+            <!-- ORDER ID -->
+
+            <div class="order-id-box">
+
+                <span>
+                    Order ID
+                </span>
+
+                <strong id="success-order-id">
+                    #FB000000
+                </strong>
+
+            </div>
+
+
+            <!-- DETAILS -->
+
+            <div class="success-details">
+
+                <div>
+
+                    <span>
+                        Customer
+                    </span>
+
+                    <strong id="success-customer">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="success-total">
+                        ₹0
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Payment
+                    </span>
+
+                    <strong id="success-payment">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong class="pending-status">
+                        Pending
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="delivery-message">
+
+                🚴
+
+                <div>
+
+                    <strong>
+                        Estimated Delivery
+                    </strong>
+
+                    <p>
+                        30–40 minutes
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="success-buttons">
+
+                <a
+                    href="menu.html"
+                    class="btn primary-btn"
+                >
+                    Order More
+                </a>
+
+                <a
+                    href="index.html"
+                    class="btn secondary-btn"
+                >
+                    Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+                const order =
+                    JSON.parse(
+                        localStorage.getItem(
+                            "lastOrder"
+                        )
+                    );
+
+
+                if (!order) {
+
+                    window.location.href =
+                        "index.html";
+
+                    return;
+
+                }
+
+
+                document.getElementById(
+                    "success-order-id"
+                ).textContent =
+                    "#" + order.id;
+
+
+                document.getElementById(
+                    "success-customer"
+                ).textContent =
+                    order.customer.name;
+
+
+                document.getElementById(
+                    "success-total"
+                ).textContent =
+                    "₹" + order.total;
+
+
+                document.getElementById(
+                    "success-payment"
+                ).textContent =
+                    order.paymentMethod;
+
+            }
+        );
+
+    </script>
+
+</body>
+
+</html>

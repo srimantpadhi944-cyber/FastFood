@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Track Order - FastBite</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🍔 FastBite
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="cart.html">
+                Cart
+                <span id="cartCount">0</span>
+            </a>
+
+            <a href="order-tracking.html" class="active">
+                Track Order
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Tracking Hero -->
+
+    <section class="tracking-hero">
+
+        <div class="tracking-container">
+
+            <span class="tracking-badge">
+                🚚 FAST & FRESH DELIVERY
+            </span>
+
+            <h1>
+                Track Your Order
+            </h1>
+
+            <p>
+                Enter your Order ID to check your order status.
+            </p>
+
+
+            <form id="trackingForm" class="tracking-form">
+
+                <input
+                    type="text"
+                    id="orderIdInput"
+                    placeholder="Enter Order ID e.g. FB123456"
+                    required
+                >
+
+                <button type="submit">
+                    Track Order
+                </button>
+
+            </form>
+
+            <p id="trackingError" class="tracking-error"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Order Result -->
+
+    <main class="tracking-main">
+
+        <div
+            id="orderResult"
+            class="order-result"
+        >
+
+            <!-- Order information will appear here -->
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 FastBite. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/order-tracking.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Cart - FastBite</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container navbar-content">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                🍔 FastBite
+            </a>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="menu.html">
+                    Menu
+                </a>
+
+                <a href="#">
+                    Offers
+                </a>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button
+                    class="cart-btn"
+                    onclick="goToCart()"
+                >
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CART HEADER ================= -->
+
+    <section class="cart-header">
+
+        <div class="container">
+
+            <span class="hero-badge">
+                🛒 YOUR CART
+            </span>
+
+            <h1>
+                Your
+                <span>Order.</span>
+            </h1>
+
+            <p>
+                Review your items before placing your order.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section">
+
+        <div class="container">
+
+            <!-- CART CONTENT -->
+
+            <div
+                class="cart-layout"
+                id="cart-layout"
+            >
+
+                <!-- ITEMS -->
+
+                <div class="cart-items">
+
+                    <div class="cart-title-row">
+
+                        <h2>
+                            Your Items
+                        </h2>
+
+                        <button
+                            class="clear-cart-btn"
+                            onclick="clearCart()"
+                        >
+                            🗑 Clear Cart
+                        </button>
+
+                    </div>
+
+
+                    <div id="cart-items-container">
+
+                        <!-- Items inserted by JavaScript -->
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUMMARY -->
+
+                <div class="cart-summary">
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <strong id="subtotal">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Delivery
+                        </span>
+
+                        <strong id="delivery">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="summary-line"></div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="grand-total">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <button
+                        class="checkout-btn"
+                        onclick="proceedToCheckout()"
+                    >
+                        Proceed to Checkout →
+                    </button>
+
+
+                    <a
+                        href="menu.html"
+                        class="continue-shopping"
+                    >
+                        ← Continue Shopping
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= EMPTY CART ================= -->
+
+            <div
+                id="empty-cart"
+                class="empty-cart"
+                style="display: none;"
+            >
+
+                <div class="empty-cart-icon">
+                    🛒
+                </div>
+
+                <h2>
+                    Your Cart is Empty
+                </h2>
+
+                <p>
+                    Looks like you haven't added
+                    anything to your cart yet.
+                </p>
+
+                <a
+                    href="menu.html"
+                    class="btn primary-btn"
+                >
+                    Explore Menu
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
